@@ -3,7 +3,7 @@ if (not status) then return end
 
 ts.setup {
   -- A list of parser names, or 'all'
-  ensure_installed = { 'c', 'lua', 'vim', 'help', 'query', 'json', 'javascript', 'typescript', 'python', 'rust', 'toml',
+  ensure_installed = { 'c', 'lua', 'vim', 'vimdoc', 'query', 'json', 'javascript', 'typescript', 'python', 'rust', 'toml',
     'yaml',
     'dockerfile' },
 
