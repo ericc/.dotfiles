@@ -9,6 +9,7 @@ mason.setup {}
 mason_lspconfig.setup {
   ensure_installed = {
     'eslint',
+    'gopls',
     'lua_ls',
     'pyright',
     'rust_analyzer',

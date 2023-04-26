@@ -19,19 +19,7 @@ local lsp_flags = {
   debounce_text_changes = 150,
 }
 
-lspconfig.tsserver.setup {
-  on_attach = on_attach,
-  flags = lsp_flags,
-  filetypes = { 'typescript', 'typescriptreact', 'typescript.tsx' },
-  cmd = { 'typescript-language-server', '--stdio' }
-}
-
-lspconfig.pyright.setup {
-  on_attach = on_attach,
-  flags = lsp_flags,
-}
-
-lspconfig.rust_analyzer.setup {
+lspconfig.gopls.setup {
   on_attach = on_attach,
   flags = lsp_flags,
 }
@@ -52,4 +40,21 @@ lspconfig.lua_ls.setup {
       }
     }
   }
+}
+
+lspconfig.pyright.setup {
+  on_attach = on_attach,
+  flags = lsp_flags,
+}
+
+lspconfig.rust_analyzer.setup {
+  on_attach = on_attach,
+  flags = lsp_flags,
+}
+
+lspconfig.tsserver.setup {
+  on_attach = on_attach,
+  flags = lsp_flags,
+  filetypes = { 'typescript', 'typescriptreact', 'typescript.tsx' },
+  cmd = { 'typescript-language-server', '--stdio' }
 }
