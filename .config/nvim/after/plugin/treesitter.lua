@@ -3,7 +3,8 @@ if (not status) then return end
 
 ts.setup {
   -- A list of parser names, or 'all'
-  ensure_installed = { 'c', 'lua', 'vim', 'vimdoc', 'query', 'json', 'javascript', 'typescript', 'python', 'rust', 'toml',
+  ensure_installed = { 'c', 'lua', 'vim', 'vimdoc', 'query', 'json', 'javascript', 'typescript', 'python', 'rust',
+    'toml',
     'yaml',
     'dockerfile' },
 
@@ -14,8 +15,17 @@ ts.setup {
   -- Recommendation: set to false if you don't have `tree-sitter` CLI installed locally
   auto_install = true,
 
+  -- List of parsers to ignore installing (or "all")
+  ignore_install = {},
+
+  modules = {},
+
   autopairs = {
     enable = true,
+  },
+
+  autotag = {
+    enable = true
   },
 
   highlight = {
