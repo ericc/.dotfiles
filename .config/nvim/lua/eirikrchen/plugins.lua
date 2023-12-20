@@ -35,6 +35,13 @@ return packer.startup(function(use)
     run = ':TSUpdate'
   }
 
+  -- Harpoon2
+  use {
+    'ThePrimeagen/harpoon',
+    branch = 'harpoon2',
+    requires = { { 'nvim-lua/plenary.nvim' } }
+  }
+
   -- Git
   use 'tpope/vim-fugitive'
   use {
@@ -48,9 +55,9 @@ return packer.startup(function(use)
   use 'williamboman/mason-lspconfig.nvim'
 
   -- Autocompletion engine
-  use 'hrsh7th/nvim-cmp' -- Completion
+  use 'hrsh7th/nvim-cmp'     -- Completion
   use 'hrsh7th/cmp-nvim-lsp' -- nvim-cmp source for neovim's built-in LSP
-  use 'hrsh7th/cmp-buffer' -- nvim-cmp source for buffer words
+  use 'hrsh7th/cmp-buffer'   -- nvim-cmp source for buffer words
 
   -- Snippets
   use 'L3MON4D3/LuaSnip' -- Snippet
