@@ -17,5 +17,10 @@ telescope.setup {
       'target',
       'venv',
     }
+  },
+  pickers = {
+    find_files = {
+      hidden = true
+    }
   }
 }
