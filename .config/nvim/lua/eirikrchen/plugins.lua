@@ -22,6 +22,9 @@ return packer.startup(function(use)
     end
   }
 
+  -- Indent blank line
+  use 'lukas-reineke/indent-blankline.nvim'
+
   -- Telescope
   use {
     'nvim-telescope/telescope.nvim', tag = '0.1.8',
